@@ -1,0 +1,38 @@
+name: ModernFFA
+version: '${project.version}'
+main: org.plugin.modernffa.ModernFFA
+api-version: '1.21'
+commands:
+  ffa:
+    description: FFA commands
+    usage: /<command>
+    aliases: [freeforall, ffa]
+    tab-completer: org.plugin.modernffa.commands.CommandManager
+permissions:
+  ffa.setspawn:
+    description: Allows setting the spawn point
+    default: op
+  ffa.setarena:
+    description: Allows setting an arena
+    default: op
+  ffa.setviparena:
+    description: Allows setting the VIP arena
+    default: op
+  ffa.viparena:
+    description: Allows accessing the VIP arena
+    default: op
+  ffa.createkit:
+    description: Allows creating kits
+    default: op
+  ffa.kit:
+    description: Allows equipping kits
+    default: true
+  ffa.setpositionresetmap:
+    description: Allows setting position reset map
+    default: op
+  ffa.enableresetarena:
+    description: Allows enabling reset arena
+    default: op
+  ffa.arena:
+    description: Allows teleporting to an arena
+    default: true
