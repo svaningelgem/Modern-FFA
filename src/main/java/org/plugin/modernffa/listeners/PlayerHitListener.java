@@ -16,13 +16,6 @@ public class PlayerHitListener implements Listener {
     private final Map<UUID, Long> hitCooldowns = new HashMap<>();
     private static final long HIT_COOLDOWN = 10000; // 10 seconds in milliseconds
 
-    public PlayerHitListener(ModernFFA plugin) {
-    }
-
-    public PlayerHitListener() {
-
-    }
-
     @EventHandler
     public void onPlayerHit(EntityDamageByEntityEvent event) {
         if (!(event.getEntity() instanceof Player victim) || !(event.getDamager() instanceof Player attacker)) {

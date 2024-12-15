@@ -16,14 +16,10 @@ import java.util.Map;
 
 public class PlayerKillListener implements Listener {
 
-    private ModernFFA plugin = null;
+    private final ModernFFA plugin;
     private final Map<Player, Integer> killStreaks = new HashMap<>();
 
-    public PlayerKillListener() {
-    }
-
     public PlayerKillListener(ModernFFA plugin) {
-
         this.plugin = plugin;
     }
 
